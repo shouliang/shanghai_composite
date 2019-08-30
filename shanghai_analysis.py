@@ -66,7 +66,7 @@ result_table = pd.DataFrame(results)
 result_table.columns = ['parameters', 'aic']
 print('最优模型:', best_model.summary())
 
-# 上证指数预测
+# 上证指数预测：历史数据到2019-2-28结束，预测其后10个月的走势
 df_month2 = df_month[['Price']]
 date_list = [datetime(2019, 3, 31), datetime(2019, 4, 30), datetime(2019, 5, 31), datetime(2019, 6, 30), datetime(2019, 7, 31),
              datetime(2019, 8, 31), datetime(2019, 9, 30), datetime(2019, 10, 31), datetime(2019, 11, 30), datetime(2019, 12, 31)]
